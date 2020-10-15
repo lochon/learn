@@ -191,3 +191,27 @@ pub mod functions_work {
         5
     }
 }
+
+pub mod branches{
+    pub fn bran_if(){
+        let num = 3;
+        if num > 3 {
+            println!("Greater than 3");
+        }else if num == 3 {
+            println!("number is 3");
+        }else {
+            println!("less than 3");
+        }
+    }
+
+    pub fn let_if(){
+        let condition = true;
+        // 因为 if 是一个表达式，我们可以在 let 语句的右侧使用它
+        let num = if condition {
+            5    // 表达式，所以没有分号
+        } else {
+            6
+        };
+        println!("num is {}", num);
+    }
+}
